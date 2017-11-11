@@ -62,9 +62,9 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Platform\JobStatusMaster\JobQueueFactory;
 
-class JobQueueFactory implements ShouldQueue
+class ExampleJob implements ShouldQueue
 {
-    use InteractsWithQueue, Queueable, SerializesModels, Trackable;
+    use InteractsWithQueue, Queueable, SerializesModels, JobQueueFactory;
 
     public function __construct(array $params)
     {
