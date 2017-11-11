@@ -1,0 +1,32 @@
+{
+    "name": "ajit3790/laravel-queue",
+    "description": "Laravel Job Status Queue Manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ajit Rajput",
+            "email": "ajit3790@gmail.com"
+        }
+    ],
+    "keywords": [
+		"laravel",
+		"job",
+		"queue"
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": ">=5.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Platform\\JobMaster\\JobStatusServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Platform\\JobMaster\\": "src"
+        }
+    }
+}
