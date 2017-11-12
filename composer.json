@@ -8,6 +8,7 @@
             "email": "ajit3790@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "keywords": [
 		"laravel",
 		"job",
